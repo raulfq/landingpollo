@@ -12,7 +12,7 @@ export default function LandingSistemaAvicola() {
             <div>
               <h1 className="text-4xl font-bold text-red-600">Sistema Avícola</h1>
 
-              <p className="text-sm text-gray-500">Administración simple para granjas y avícolas</p>
+              <p className="text-sm text-gray-500">Administración simple para avícolas</p>
             </div>
           </div>
           <nav className="hidden md:flex gap-6 items-center text-sm">
