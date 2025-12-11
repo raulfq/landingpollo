@@ -1,6 +1,15 @@
 
 
 export default function LandingSistemaAvicola() {
+
+          // Estado para el lightbox (agregar arriba del return)
+const [lightbox, setLightbox] = useState({ open: false, index: 0 });
+
+const imagenes = [
+  "/carrusel1.png",
+  "/carrusel2.png",
+  "/carrusel3.png"
+];
   return (
 
     
@@ -141,14 +150,7 @@ export default function LandingSistemaAvicola() {
 
 {/* CARRUSEL SIMPLE */
 
-        // Estado para el lightbox (agregar arriba del return)
-const [lightbox, setLightbox] = useState({ open: false, index: 0 });
 
-const imagenes = [
-  "/carrusel1.png",
-  "/carrusel2.png",
-  "/carrusel3.png"
-];
         
 /* CARRUSEL SIMPLE */
 <section className="mt-16">
