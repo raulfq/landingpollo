@@ -38,7 +38,7 @@ export default function LandingSistemaAvicola() {
   </a>
 </nav>
 
-          <button className="md:hidden p-2">☰</button>
+         
         </div>
       </header>
 
