@@ -1,15 +1,49 @@
 
+import React, { useState, useEffect } from "react";
 
 export default function LandingSistemaAvicola() {
+  // --- estados y datos (DEBEN ir aquí, antes del return) ---
+  const [lightbox, setLightbox] = useState({ open: false, index: 0 });
+  const [animateIn, setAnimateIn] = useState(false);
 
-          // Estado para el lightbox (agregar arriba del return)
-const [lightbox, setLightbox] = useState({ open: false, index: 0 });
+  const imagenes = [
+    "/carrusel1.png",
+    "/carrusel2.png",
+    "/carrusel3.png"
+  ];
 
-const imagenes = [
-  "/carrusel1.png",
-  "/carrusel2.png",
-  "/carrusel3.png"
-];
+  // Cuando se abre el lightbox, activamos la animación.
+  useEffect(() => {
+    if (lightbox.open) {
+      // pequeña pausa para garantizar la transición desde el DOM
+      setAnimateIn(false);
+      const t = setTimeout(() => setAnimateIn(true), 10);
+      return () => clearTimeout(t);
+    } else {
+      setAnimateIn(false);
+    }
+  }, [lightbox.open, lightbox.index]);
+
+  // Manejo teclado (Esc, flechas)
+  useEffect(() => {
+    function onKey(e) {
+      if (!lightbox.open) return;
+      if (e.key === "Escape") setLightbox({ ...lightbox, open: false });
+      if (e.key === "ArrowLeft")
+        setLightbox({
+          ...lightbox,
+          index: (lightbox.index - 1 + imagenes.length) % imagenes.length,
+        });
+      if (e.key === "ArrowRight")
+        setLightbox({
+          ...lightbox,
+          index: (lightbox.index + 1) % imagenes.length,
+        });
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [lightbox, imagenes.length]);
+
   return (
 
     
