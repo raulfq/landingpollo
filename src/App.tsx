@@ -136,14 +136,68 @@ export default function LandingSistemaAvicola() {
             </div>
           </div>
         </section>
-      {/* CARRUSEL SIMPLE */}
+
+  
+
+{/* CARRUSEL SIMPLE */
+
+        // Estado para el lightbox (agregar arriba del return)
+const [lightbox, setLightbox] = useState({ open: false, index: 0 });
+
+const imagenes = [
+  "/carrusel1.png",
+  "/carrusel2.png",
+  "/carrusel3.png"
+];
+        
 <section className="mt-16">
 <h3 className="text-2xl font-semibold">Galería del sistema</h3>
+
+
+{/* Grid de imágenes pequeñas */}
 <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 rounded-xl overflow-hidden shadow-lg">
-<img src="/carrusel1.png" className="w-full h-64 object-cover bg-gray-200" />
-<img src="/carrusel2.png" className="w-full h-64 object-cover bg-gray-200" />
-<img src="/carrusel3.png" className="w-full h-64 object-cover bg-gray-200" />
+{images.map((img, index) => (
+<img
+key={index}
+src={img}
+className="w-full h-64 object-cover bg-gray-200 cursor-pointer hover:scale-105 transition"
+onClick={() => setLightbox({ open: true, index })}
+/>
+))}
 </div>
+
+
+{/* LIGHTBOX */}
+{lightbox.open && (
+<div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50">
+{/* Botón cerrar */}
+<button
+className="absolute top-5 right-5 text-white text-3xl"
+onClick={() => setLightbox({ ...lightbox, open: false })}
+>✕</button>
+
+
+{/* Flecha izquierda */}
+<button
+className="absolute left-5 text-white text-4xl"
+onClick={() => setLightbox({ open: true, index: (lightbox.index - 1 + images.length) % images.length })}
+>❮</button>
+
+
+{/* Imagen ampliada */}
+<img
+src={images[lightbox.index]}
+className="max-w-[90%] max-h-[80%] rounded-lg shadow-xl"
+/>
+
+
+{/* Flecha derecha */}
+<button
+className="absolute right-5 text-white text-4xl"
+onClick={() => setLightbox({ open: true, index: (lightbox.index + 1) % images.length })}
+>❯</button>
+</div>
+)}
 </section>
 
 
