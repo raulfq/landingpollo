@@ -136,7 +136,32 @@ export default function LandingSistemaAvicola() {
             </div>
           </div>
         </section>
+      {/* CARRUSEL SIMPLE */}
+<section className="mt-16">
+<h3 className="text-2xl font-semibold">Galería del sistema</h3>
+<div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 rounded-xl overflow-hidden shadow-lg">
+<img src="/img1.png" className="w-full h-64 object-cover bg-gray-200" />
+<img src="/img2.png" className="w-full h-64 object-cover bg-gray-200" />
+<img src="/img3.png" className="w-full h-64 object-cover bg-gray-200" />
+</div>
+</section>
 
+
+{/* VIDEO */}
+<section className="mt-16">
+<h3 className="text-2xl font-semibold">Video demostrativo</h3>
+<p className="text-gray-600 mt-2">Mira cómo funciona el sistema.</p>
+
+
+<div className="mt-6 rounded-xl overflow-hidden shadow-lg bg-black">
+<iframe
+className="w-full h-72 md:h-96"
+src="https://www.youtube.com/embed/N9ZLQJ9l1mE"
+title="Demo Sistema Avícola"
+allowFullScreen
+></iframe>
+</div>
+</section>
         {/* Demo / Contact */}
         <section id="demo" className="mt-14 grid md:grid-cols-2 gap-6 items-start">
           <div className="bg-white p-6 rounded-lg shadow">
