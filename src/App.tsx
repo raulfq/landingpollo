@@ -140,9 +140,9 @@ export default function LandingSistemaAvicola() {
 <section className="mt-16">
 <h3 className="text-2xl font-semibold">Galería del sistema</h3>
 <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 rounded-xl overflow-hidden shadow-lg">
-<img src="/img1.png" className="w-full h-64 object-cover bg-gray-200" />
-<img src="/img2.png" className="w-full h-64 object-cover bg-gray-200" />
-<img src="/img3.png" className="w-full h-64 object-cover bg-gray-200" />
+<img src="/carrusel1.png" className="w-full h-64 object-cover bg-gray-200" />
+<img src="/carrusel2.png" className="w-full h-64 object-cover bg-gray-200" />
+<img src="/carrusel3.png" className="w-full h-64 object-cover bg-gray-200" />
 </div>
 </section>
 
