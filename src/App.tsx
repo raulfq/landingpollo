@@ -53,7 +53,7 @@ export default function LandingSistemaAvicola() {
 
               <div className="mt-4 grid gap-3">
                 <div className="text-xs text-gray-500">Precio orientativo</div>
-                <div className="text-2xl font-bold">S/ 60 / mes</div>
+                <div className="text-2xl font-bold">S/ 69 / mes</div>
                 <div className="text-sm text-gray-500">(Plan base — personalizable según módulos)</div>
 
                 <a href="#contacto" className="mt-3 inline-block px-4 py-2 bg-orange-500 text-white rounded-md">Solicitar demo</a>
@@ -98,7 +98,7 @@ export default function LandingSistemaAvicola() {
 
             <div className="p-6 bg-white rounded-xl shadow border-2 border-orange-200">
               <div className="text-sm font-semibold text-gray-500">Pro</div>
-              <div className="mt-4 text-3xl font-bold">S/ 60 <span className="text-base font-medium text-gray-500">/mes</span></div>
+              <div className="mt-4 text-3xl font-bold">S/ 69 <span className="text-base font-medium text-gray-500">/mes</span></div>
               <ul className="mt-4 text-sm text-gray-700 space-y-2">
                 <li>• Hasta 3 usuarios</li>
                 <li>• Backup diario</li>
@@ -137,7 +137,7 @@ export default function LandingSistemaAvicola() {
 
           <div id="contacto" className="bg-white p-6 rounded-lg shadow">
             <h4 className="font-semibold">Contacto</h4>
-            <p className="text-sm text-gray-600 mt-2">O escríbenos a: <strong>bubafq1745@gmail.com</strong></p>
+            <p className="text-sm text-gray-600 mt-2">O escríbenos a: <strong>raulfq4@gmail.com</strong></p>
 
             <div className="mt-4">
               <h5 className="font-medium">Integraciones</h5>
