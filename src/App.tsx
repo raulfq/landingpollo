@@ -156,7 +156,7 @@ export default function LandingSistemaAvicola() {
 
         {/* Footer */}
         <footer className="mt-14 text-center text-sm text-gray-500">
-          <div>© {new Date().getFullYear()} Sistema Avícola — Hecho para productores</div>
+          <div>© {new Date().getFullYear()} Sistema Avícola — Hecho para Raulfqdev</div>
         </footer>
       </main>
     </div>
