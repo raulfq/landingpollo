@@ -64,10 +64,10 @@ export default function LandingSistemaAvicola() {
           </div>
          <nav className="flex gap-4 items-center text-sm">
   {/* Links visibles solo en desktop */}
-  <div className="hidden md:flex gap-6 text-black">
-    <a href="#features" className="hover:underline">Características</a>
-    <a href="#precios" className="hover:underline">Precios</a>
-    <a href="#demo" className="hover:underline">Demo</a>
+  <div className="hidden md:flex gap-6 ">
+    <a href="#features" className="hover:underline text-black">Características</a>
+    <a href="#precios" className="hover:underline text-black">Precios</a>
+    <a href="#demo" className="hover:underline text-black">Demo</a>
   </div>
 
   {/* Botón Contactar (siempre visible) */}
