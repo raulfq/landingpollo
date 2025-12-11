@@ -40,6 +40,7 @@ export default function LandingSistemaAvicola() {
             <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
               <li>✅ Registro rápido de boletas</li>
               <li>✅ Gestión de pagos y saldos</li>
+              <li>✅ Metricas Diarias </li>
               <li>✅ Reportes exportables</li>
               <li>✅ Multiusuario y backups</li>
             </ul>
