@@ -8,9 +8,10 @@ export default function LandingSistemaAvicola() {
       <header className="bg-white shadow">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
-      <div className="w-32 h-32 rounded-2xl flex items-center justify-center">
-  <img src="/logo.png" alt="Logo" className="w-28 h-28 object-contain" />
+     <div className="w-20 h-20 rounded-lg flex items-center justify-center">
+  <img src="/logo.png" alt="Logo" className="w-16 h-16 object-contain" />
 </div>
+
 
             <div>
               <h1 className="text-4xl font-bold text-red-600">Sistema Avícola</h1>
