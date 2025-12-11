@@ -61,7 +61,7 @@ export default function LandingSistemaAvicola() {
               <div className="mt-4 grid gap-3">
                 <div className="text-xs text-gray-500">Precio orientativo</div>
                 <div className="text-2xl font-bold">S/ 69 / mes</div>
-                <div className="text-sm text-gray-500">(Plan base — personalizable según módulos)</div>
+                <div className="text-sm text-gray-500">(Plan Basico )</div>
 
                 <a href="#contacto" className="mt-3 inline-block px-4 py-2 bg-orange-500 text-white rounded-md">Solicitar demo</a>
               </div>
@@ -94,7 +94,7 @@ export default function LandingSistemaAvicola() {
           <div className="mt-6 grid gap-6 md:grid-cols-3">
             <div className="p-6 bg-white rounded-xl shadow">
               <div className="text-sm font-semibold text-gray-500">Básico</div>
-              <div className="mt-4 text-3xl font-bold">S/ 60 <span className="text-base font-medium text-gray-500">/mes</span></div>
+              <div className="mt-4 text-3xl font-bold">S/ 69 <span className="text-base font-medium text-gray-500">/mes</span></div>
               <ul className="mt-4 text-sm text-gray-700 space-y-2">
                 <li>• 1 usuario</li>
                 <li>• Boletas y clientes</li>
