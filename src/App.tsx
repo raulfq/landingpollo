@@ -150,8 +150,9 @@ export default function LandingSistemaAvicola() {
               <div className="mt-4 text-3xl font-bold">S/ 69 <span className="text-base font-medium text-gray-500">/mes</span></div>
               <ul className="mt-4 text-sm text-gray-700 space-y-2">
                 <li>• 1 usuario</li>
-                <li>• Boletas y clientes</li>
-                <li>• Exportar Excel</li>
+                <li>• Boletas , clientes y Pagos </li>
+                <li>• Exportar Pdf y Excel</li>
+                <li>• Lecturas Limitadas de Datos</li>
               </ul>
               <a className="mt-6 inline-block px-4 py-2 bg-orange-500 text-white rounded-md" href="#contacto">Contactar</a>
             </div>
@@ -161,8 +162,11 @@ export default function LandingSistemaAvicola() {
               <div className="mt-4 text-3xl font-bold">S/ 95 <span className="text-base font-medium text-gray-500">/mes</span></div>
               <ul className="mt-4 text-sm text-gray-700 space-y-2">
                 <li>• 2 usuarios </li>
-                <li>• Backup diario</li>
-                <li>• Soporte por email</li>
+                <li>• Boletas , Reportes y Pagos </li>
+                <li>• Exportar Pdf y Excel</li>
+                <li>• Soporte diario </li>
+                <li>• Registros Ilimitados</li>
+                <li>• Backup diarios </li>
               </ul>
               <a className="mt-6 inline-block px-4 py-2 bg-orange-600 text-white rounded-md" href="#contacto">Contratar</a>
             </div>
@@ -171,7 +175,7 @@ export default function LandingSistemaAvicola() {
               <div className="text-sm font-semibold text-gray-500">Enterprise</div>
               <div className="mt-4 text-3xl font-bold">A convenir</div>
               <ul className="mt-4 text-sm text-gray-700 space-y-2">
-                <li>• Integración personalizada</li>
+                <li>• Modulos personalizados </li>
                 <li>• Hosting privado</li>
                 <li>• Capacitación</li>
               </ul>
