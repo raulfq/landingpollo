@@ -94,7 +94,7 @@ export default function LandingSistemaAvicola() {
           <div className="mt-6 grid gap-6 md:grid-cols-3">
             <div className="p-6 bg-white rounded-xl shadow">
               <div className="text-sm font-semibold text-gray-500">Básico</div>
-              <div className="mt-4 text-3xl font-bold">S/ 30 <span className="text-base font-medium text-gray-500">/mes</span></div>
+              <div className="mt-4 text-3xl font-bold">S/ 60 <span className="text-base font-medium text-gray-500">/mes</span></div>
               <ul className="mt-4 text-sm text-gray-700 space-y-2">
                 <li>• 1 usuario</li>
                 <li>• Boletas y clientes</li>
@@ -105,9 +105,9 @@ export default function LandingSistemaAvicola() {
 
             <div className="p-6 bg-white rounded-xl shadow border-2 border-orange-200">
               <div className="text-sm font-semibold text-gray-500">Pro</div>
-              <div className="mt-4 text-3xl font-bold">S/ 69 <span className="text-base font-medium text-gray-500">/mes</span></div>
+              <div className="mt-4 text-3xl font-bold">S/ 95 <span className="text-base font-medium text-gray-500">/mes</span></div>
               <ul className="mt-4 text-sm text-gray-700 space-y-2">
-                <li>• Hasta 3 usuarios</li>
+                <li>• 2 usuarios </li>
                 <li>• Backup diario</li>
                 <li>• Soporte por email</li>
               </ul>
