@@ -183,7 +183,83 @@ export default function LandingSistemaAvicola() {
   
 
 {/* CARRUSEL SIMPLE */
+   {/* ====== CARRUSEL + LIGHTBOX ====== */}
+        <section className="mt-16">
+          <h3 className="text-2xl font-semibold">Galería del sistema</h3>
 
+          {/* Miniaturas */}
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 rounded-xl overflow-hidden shadow-lg">
+            {imagenes.map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt={`captura-${index}`}
+                className="w-full h-64 object-cover bg-gray-200 cursor-pointer hover:scale-105 transition-transform duration-200"
+                onClick={() => setLightbox({ open: true, index })}
+              />
+            ))}
+          </div>
+
+          {/* Lightbox overlay */}
+          {lightbox.open && (
+            <div
+              className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50"
+              // cerrar si se hace click fuera de la imagen (target === currentTarget)
+              onClick={(e) => {
+                if (e.target === e.currentTarget) setLightbox({ ...lightbox, open: false });
+              }}
+            >
+              {/* Cerrar */}
+              <button
+                className="absolute top-5 right-5 text-white text-3xl"
+                onClick={() => setLightbox({ ...lightbox, open: false })}
+                aria-label="Cerrar"
+              >
+                ✕
+              </button>
+
+              {/* Flecha izquierda */}
+              <button
+                className="absolute left-5 text-white text-4xl p-2"
+                onClick={() =>
+                  setLightbox({
+                    open: true,
+                    index: (lightbox.index - 1 + imagenes.length) % imagenes.length,
+                  })
+                }
+                aria-label="Anterior"
+              >
+                ❮
+              </button>
+
+              {/* Imagen ampliada con animación scale */}
+              <img
+                src={imagenes[lightbox.index]}
+                alt={`ampliada-${lightbox.index}`}
+                className={
+                  "max-w-[90%] max-h-[80%] rounded-lg shadow-xl transform transition-transform duration-300 " +
+                  (animateIn ? "scale-100" : "scale-75")
+                }
+                // evitar que el click en la imagen cierre el overlay
+                onClick={(e) => e.stopPropagation()}
+              />
+
+              {/* Flecha derecha */}
+              <button
+                className="absolute right-5 text-white text-4xl p-2"
+                onClick={() =>
+                  setLightbox({
+                    open: true,
+                    index: (lightbox.index + 1) % imagenes.length,
+                  })
+                }
+                aria-label="Siguiente"
+              >
+                ❯
+              </button>
+            </div>
+          )}
+        </section>
 
         
 
