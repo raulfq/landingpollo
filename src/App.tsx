@@ -150,55 +150,69 @@ const imagenes = [
   "/carrusel3.png"
 ];
         
+/* CARRUSEL SIMPLE */
 <section className="mt-16">
-<h3 className="text-2xl font-semibold">Galería del sistema</h3>
+  <h3 className="text-2xl font-semibold">Galería del sistema</h3>
 
+  {/* Miniaturas */}
+  <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 rounded-xl overflow-hidden shadow-lg">
+    {imagenes.map((src, index) => (
+      <img
+        key={index}
+        src={src}
+        className="w-full h-64 object-cover bg-gray-200 cursor-pointer hover:scale-105 transition"
+        onClick={() => setLightbox({ open: true, index })}
+      />
+    ))}
+  </div>
 
-{/* Grid de imágenes pequeñas */}
-<div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-3 rounded-xl overflow-hidden shadow-lg">
-{images.map((img, index) => (
-<img
-key={index}
-src={img}
-className="w-full h-64 object-cover bg-gray-200 cursor-pointer hover:scale-105 transition"
-onClick={() => setLightbox({ open: true, index })}
-/>
-))}
-</div>
+  {/* LIGHTBOX */}
+  {lightbox.open && (
+    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50">
+      
+      {/* Cerrar */}
+      <button
+        className="absolute top-5 right-5 text-white text-3xl"
+        onClick={() => setLightbox({ ...lightbox, open: false })}
+      >
+        ✕
+      </button>
 
+      {/* Flecha izquierda */}
+      <button
+        className="absolute left-5 text-white text-4xl"
+        onClick={() =>
+          setLightbox({
+            open: true,
+            index: (lightbox.index - 1 + imagenes.length) % imagenes.length,
+          })
+        }
+      >
+        ❮
+      </button>
 
-{/* LIGHTBOX */}
-{lightbox.open && (
-<div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50">
-{/* Botón cerrar */}
-<button
-className="absolute top-5 right-5 text-white text-3xl"
-onClick={() => setLightbox({ ...lightbox, open: false })}
->✕</button>
+      {/* Imagen grande */}
+      <img
+        src={imagenes[lightbox.index]}
+        className="max-w-[90%] max-h-[80%] rounded-lg shadow-xl"
+      />
 
-
-{/* Flecha izquierda */}
-<button
-className="absolute left-5 text-white text-4xl"
-onClick={() => setLightbox({ open: true, index: (lightbox.index - 1 + images.length) % images.length })}
->❮</button>
-
-
-{/* Imagen ampliada */}
-<img
-src={images[lightbox.index]}
-className="max-w-[90%] max-h-[80%] rounded-lg shadow-xl"
-/>
-
-
-{/* Flecha derecha */}
-<button
-className="absolute right-5 text-white text-4xl"
-onClick={() => setLightbox({ open: true, index: (lightbox.index + 1) % images.length })}
->❯</button>
-</div>
-)}
+      {/* Flecha derecha */}
+      <button
+        className="absolute right-5 text-white text-4xl"
+        onClick={() =>
+          setLightbox({
+            open: true,
+            index: (lightbox.index + 1) % imagenes.length,
+          })
+        }
+      >
+        ❯
+      </button>
+    </div>
+  )}
 </section>
+
 
 
 {/* VIDEO */}
