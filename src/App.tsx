@@ -19,15 +19,25 @@ export default function LandingSistemaAvicola() {
               <p className="text-sm text-gray-500">Administración simple para avícolas</p>
             </div>
           </div>
-          <nav className="hidden md:flex gap-6 items-center text-sm">
-            <a href="#features" className="hover:underline">Características</a>
-            <a href="#precios" className="hover:underline">Precios</a>
-            <a href="#demo" className="hover:underline">Demo</a>
-            <a href="https://wa.me/51970338838?text=Estoy%20interesado%20en%20el%20sistema" target="_blank"rel="noopener noreferrer"className="px-4 py-2 bg-orange-500 text-white rounded-md shadow-sm hover:opacity-95">
-  Contactar
-</a>
+         <nav className="flex gap-4 items-center text-sm">
+  {/* Links visibles solo en desktop */}
+  <div className="hidden md:flex gap-6">
+    <a href="#features" className="hover:underline">Características</a>
+    <a href="#precios" className="hover:underline">Precios</a>
+    <a href="#demo" className="hover:underline">Demo</a>
+  </div>
 
-          </nav>
+  {/* Botón Contactar (siempre visible) */}
+  <a
+    href="https://wa.me/51970338838?text=Estoy%20interesado%20en%20el%20sistema"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-4 py-2 bg-orange-500 text-white rounded-md shadow-sm hover:opacity-95"
+  >
+    Contactar
+  </a>
+</nav>
+
           <button className="md:hidden p-2">☰</button>
         </div>
       </header>
