@@ -22,7 +22,10 @@ export default function LandingSistemaAvicola() {
             <a href="#features" className="hover:underline">Características</a>
             <a href="#precios" className="hover:underline">Precios</a>
             <a href="#demo" className="hover:underline">Demo</a>
-            <a href="#contacto" className="px-4 py-2 bg-orange-500 text-white rounded-md shadow-sm hover:opacity-95">Contactar</a>
+            <a href="https://wa.me/51970338838?text=Estoy%20interesado%20en%20el%20sistema" target="_blank"rel="noopener noreferrer"className="px-4 py-2 bg-orange-500 text-white rounded-md shadow-sm hover:opacity-95">
+  Contactar
+</a>
+
           </nav>
           <button className="md:hidden p-2">☰</button>
         </div>
