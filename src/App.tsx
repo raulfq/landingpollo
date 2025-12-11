@@ -137,12 +137,12 @@ export default function LandingSistemaAvicola() {
 
           <div id="contacto" className="bg-white p-6 rounded-lg shadow">
             <h4 className="font-semibold">Contacto</h4>
-            <p className="text-sm text-gray-600 mt-2">O escríbenos a: <strong>ventas@sistemaavicola.com</strong></p>
+            <p className="text-sm text-gray-600 mt-2">O escríbenos a: <strong>bubafq1745@gmail.com</strong></p>
 
             <div className="mt-4">
               <h5 className="font-medium">Integraciones</h5>
               <ul className="text-sm text-gray-700 mt-2 space-y-1">
-                <li>• Stripe / PayPal (pagos online)</li>
+                <li>• Yape / Plin (pagos online)</li>
                 <li>• Google Sheets / Drive</li>
                 <li>• Exportar Excel / PDF</li>
               </ul>
