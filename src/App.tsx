@@ -90,7 +90,7 @@ export default function LandingSistemaAvicola() {
         <section className="grid gap-8 md:grid-cols-2 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-extrabold">Vende más, controla todo con <span className="text-orange-600">Sistema Avícola</span></h2>
-            <p className="mt-4 text-gray-600">Gestión de boletas, pagos, clientes y reportes en una sola plataforma. Ideal para granjas pequeñas y medianas que quieren ahorrar tiempo y aumentar el control financiero.</p>
+            <p className="mt-4 text-gray-600">Gestión de boletas, pagos, clientes y reportes en una sola plataforma. Ideal para avicolas pequeñas y medianas que quieren ahorrar tiempo y aumentar el control financiero.</p>
 
             <div className="mt-6 flex gap-3">
               <a href="#contacto" className="px-5 py-3 bg-orange-500 text-white rounded-md font-medium shadow">Solicitar demo</a>
