@@ -5,6 +5,10 @@ import { useState, useEffect } from "react";
 type MouseEventType = React.MouseEvent<HTMLButtonElement | HTMLDivElement | HTMLAnchorElement>;
 
 export default function LandingSistemaAvicola() {
+    // NOTA: Esta función DEBE estar definida dentro de tu componente LandingSistemaAvicola.tsx
+const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
     // --- Estados ---
     const [lightbox, setLightbox] = useState({ open: false, index: 0 });
@@ -46,20 +50,20 @@ export default function LandingSistemaAvicola() {
 
 
 
-            {/* ================= HEADER (CON ANIMACIÓN DE NAVEGACIÓN Y RESPONSIVO) ================= */}
+{/* ================= HEADER (CON ANIMACIÓN DE NAVEGACIÓN Y SCROLL SUAVE AL LOGO) ================= */}
 <header className="bg-white shadow sticky top-0 z-40">
     <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-        {/* 🚀 Cambio 1: El div contenedor ahora es un botón clicable */}
+        
+        {/* 🚀 LOGO/BOTÓN DE INICIO: Ahora usa 'scrollTop()' para un desplazamiento suave */}
         <button 
             className="flex items-center gap-3 focus:outline-none"
-            onClick={() => window.location.reload()} // 🎯 Función para recargar la página
+            onClick={scrollTop} // 🎯 Función para SCROLL SUAVE AL INICIO
         >
             <div className="w-16 h-16 rounded-lg flex items-center justify-center">
-                {/* Reducido el tamaño del logo en el contenedor para mejor estética en móvil */}
                 <img src="/logo.png" alt="Logo" className="w-14 h-14 object-contain" />
             </div>
             <div>
-                {/* 🎯 Cambio 2: Reducción del tamaño del título en móvil (md:text-4xl) */}
+                {/* Título responsivo y subtítulo actualizado */}
                 <h1 className="text-3xl md:text-4xl font-bold text-red-600 text-left">Sistema Avícola</h1>
                 <p className="text-xs sm:text-sm text-gray-500 text-left">Administración simple Avícolas Mype</p>
             </div>
@@ -67,6 +71,7 @@ export default function LandingSistemaAvicola() {
 
         <nav className="flex gap-4 items-center text-sm">
             <div className="hidden md:flex gap-6">
+                {/* Enlaces de navegación con animación (nav-item) */}
                 <a href="#features" className="text-gray-900 visited:text-gray-900 nav-item pb-1">Características</a>
                 <a href="#precios" className="text-gray-900 visited:text-gray-900 nav-item pb-1">Precios</a>
                 <a href="#demo" className="text-gray-900 visited:text-gray-900 nav-item pb-1">Demo</a>
