@@ -61,7 +61,7 @@ export default function LandingSistemaAvicola() {
             <div>
                 {/* 🎯 Cambio 2: Reducción del tamaño del título en móvil (md:text-4xl) */}
                 <h1 className="text-3xl md:text-4xl font-bold text-red-600 text-left">Sistema Avícola</h1>
-                <p className="text-xs sm:text-sm text-gray-500 text-left">Administración simple para avícolas Mype</p>
+                <p className="text-xs sm:text-sm text-gray-500 text-left">Administración simple Avícolas Mype</p>
             </div>
         </button>
 
