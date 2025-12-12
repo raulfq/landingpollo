@@ -44,34 +44,45 @@ export default function LandingSistemaAvicola() {
     return (
         <div className="min-h-screen bg-gray-50 text-gray-900 relative">
 
-            {/* ================= HEADER ================= */}
-            <header className="bg-white shadow sticky top-0 z-40">
-                <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                        <div className="w-20 h-20 rounded-lg flex items-center justify-center">
-                            <img src="/logo.png" alt="Logo" className="w-16 h-16 object-contain" />
-                        </div>
-                        <div>
-                            <h1 className="text-4xl font-bold text-red-600">Sistema Avícola</h1>
-                            <p className="text-sm text-gray-500">Administración simple para avícolas</p>
-                        </div>
-                    </div>
-                    <nav className="flex gap-4 items-center text-sm">
-                        <div className="hidden md:flex gap-6">
-                            <a href="#features" className="hover:underline text-black">Características</a>
-                            <a href="#precios" className="hover:underline text-black">Precios</a>
-                            <a href="#demo" className="hover:underline text-black">Demo</a>
-                        </div>
-                        {/* Enlace al formulario de contacto (#contacto) */}
-                        <a
-                            href="#contacto"
-                            className="px-4 py-2 bg-orange-500 text-white rounded-md shadow-sm hover:opacity-95"
-                        >
-                            Contactar
-                        </a>
-                    </nav>
-                </div>
-            </header>
+
+
+            {/* ================= HEADER (CON ANIMACIÓN DE NAVEGACIÓN Y RESPONSIVO) ================= */}
+<header className="bg-white shadow sticky top-0 z-40">
+    <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+        {/* 🚀 Cambio 1: El div contenedor ahora es un botón clicable */}
+        <button 
+            className="flex items-center gap-3 focus:outline-none"
+            onClick={() => window.location.reload()} // 🎯 Función para recargar la página
+        >
+            <div className="w-16 h-16 rounded-lg flex items-center justify-center">
+                {/* Reducido el tamaño del logo en el contenedor para mejor estética en móvil */}
+                <img src="/logo.png" alt="Logo" className="w-14 h-14 object-contain" />
+            </div>
+            <div>
+                {/* 🎯 Cambio 2: Reducción del tamaño del título en móvil (md:text-4xl) */}
+                <h1 className="text-3xl md:text-4xl font-bold text-red-600 text-left">Sistema Avícola</h1>
+                <p className="text-xs sm:text-sm text-gray-500 text-left">Administración simple para avícolas Mype</p>
+            </div>
+        </button>
+
+        <nav className="flex gap-4 items-center text-sm">
+            <div className="hidden md:flex gap-6">
+                <a href="#features" className="text-gray-900 visited:text-gray-900 nav-item pb-1">Características</a>
+                <a href="#precios" className="text-gray-900 visited:text-gray-900 nav-item pb-1">Precios</a>
+                <a href="#demo" className="text-gray-900 visited:text-gray-900 nav-item pb-1">Demo</a>
+            </div>
+            {/* Enlace al formulario de contacto (#contacto) */}
+            <a
+                href="#contacto"
+                className="px-4 py-2 bg-orange-500 text-white rounded-md shadow-sm hover:opacity-95"
+            >
+                Contactar
+            </a>
+        </nav>
+    </div>
+</header>
+
+
 
             {/* ================= MAIN ================= */}
             <main className="max-w-7xl mx-auto px-6 py-12">
@@ -85,6 +96,7 @@ export default function LandingSistemaAvicola() {
                         <p className="mt-4 text-gray-600">
                             Gestión de boletas, pagos, clientes y reportes en una sola plataforma.
                             Ideal para avícolas que quieren ahorrar tiempo y aumentar el control financiero.
+                            
                         </p>
                         <div className="mt-6 flex gap-3">
                             {/* Enlace al formulario de contacto (#contacto) */}
@@ -104,7 +116,7 @@ export default function LandingSistemaAvicola() {
                         <div className="border border-dashed border-gray-200 rounded-lg p-4">
                             <h3 className="font-semibold">Demo rápido</h3>
                             <p className="text-sm text-gray-600 mt-2">
-                                Sube capturas o describe tu proceso y armamos una demo personalizada.
+                              Prueba nuestra demo gratuita y descubre lo fácil que es administrar tus ventas y clientes.
                             </p>
                             <div className="mt-4 grid gap-3">
                                 <div className="text-xs text-gray-500">Precio orientativo</div>
@@ -122,18 +134,18 @@ export default function LandingSistemaAvicola() {
                 {/* ================= FEATURES ================= */}
                 <section id="features" className="mt-14">
                     <h3 className="text-2xl font-semibold">Qué incluye</h3>
-                    <div className="mt-6 grid gap-6 md:grid-cols-3">
-                        <div className="bg-white p-5 rounded-lg shadow-sm">
+                    <div className="mt-6 grid gap-6 md:grid-cols-3 text-white">
+                        <div className="bg-blue-500 p-5 rounded-lg shadow-sm">
                             <h4 className="font-semibold">Clientes y Boletas</h4>
-                            <p className="text-sm text-gray-600 mt-2">Registro de clientes, boletas con devoluciones y exportación a Excel.</p>
+                            <p className="text-sm text-gray-600 mt-2 text-white ">Registro de clientes, boletas con devoluciones y exportación a Excel.</p>
                         </div>
-                        <div className="bg-white p-5 rounded-lg shadow-sm">
+                        <div className="bg-gray-500 p-5 rounded-lg shadow-sm">
                             <h4 className="font-semibold">Pagos y Saldos</h4>
-                            <p className="text-sm text-gray-600 mt-2">Historial de pagos, gestión de saldos y reportes diarios.</p>
+                            <p className="text-sm text-gray-600 mt-2 text-white">Historial de pagos, gestión de saldos y reportes diarios.</p>
                         </div>
-                        <div className="bg-white p-5 rounded-lg shadow-sm">
+                        <div className="bg-green-500 p-5 rounded-lg shadow-sm">
                             <h4 className="font-semibold">Reportes y Backups</h4>
-                            <p className="text-sm text-gray-600 mt-2">Exportación, backup automático y limpieza de datos antiguos.</p>
+                            <p className="text-sm text-gray-600 mt-2 text-white">Exportación, backup automático y limpieza de datos antiguos.</p>
                         </div>
                     </div>
                 </section>
@@ -263,7 +275,8 @@ export default function LandingSistemaAvicola() {
                 </div>
 
                 <div className="border-t border-orange-300 mt-6 py-4 text-center text-gray-600 text-sm">
-                    © 2025 Sistema Avícola. Todos los derechos reservados.
+                    © 2025 Sistema Avícola. Todos los derechos reservados.<br />
+                    Desarrollado por Raúl F. - Fratech.
                 </div>
             </footer>
 
