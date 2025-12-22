@@ -203,8 +203,15 @@ const scrollTop = () => {
                             <a className="mt-6 inline-block px-4 py-2 border border-orange-500 text-orange-600 rounded-md" href="#contacto">Pedir cotización</a>
                         </div>
                     </div>
-                </section>
+                    {/* ... después del cierre del div de la cuadrícula de tarjetas */}
+  {/* Este es el cierre de <div className="mt-6 grid gap-6 md:grid-cols-3"> */}
+    
+    <p className="mt-8 text-center text-gray-500 text-sm italic">
+        * Costo de configuración inicial: <span className="font-semibold text-gray-400 text-base">S/ 150</span> (pago único por implementación y capacitación)
+    </p>
 
+                </section>
+                        
                 {/* ================= CARRUSEL ================= */}
                 <section className="mt-16">
                     <h3 className="text-2xl font-semibold">Galería del sistema</h3>
