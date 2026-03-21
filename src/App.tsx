@@ -64,7 +64,7 @@ const scrollTop = () => {
             </div>
             <div>
                 {/* Título responsivo y subtítulo actualizado */}
-                <h1 className="text-3xl md:text-4xl font-bold text-red-600 text-left">Sistema Avícola</h1>
+                <h1 className="text-3xl md:text-4xl font-bold text-red-600 text-left">Sistema Avícola Mype</h1>
                 <p className="text-xs sm:text-sm text-gray-500 text-left">Administración simple Avícolas Mype</p>
             </div>
         </button>
@@ -100,7 +100,7 @@ const scrollTop = () => {
                         </h2>
                         <p className="mt-4 text-gray-600">
                             Gestión de boletas, pagos, clientes y reportes en una sola plataforma.
-                            Ideal para avícolas que quieren ahorrar tiempo y aumentar el control financiero.
+                            Ideal para avícolas MYPES que quieren ahorrar tiempo y aumentar el control financiero.
                             
                         </p>
                         <div className="mt-6 flex gap-3">
@@ -111,6 +111,7 @@ const scrollTop = () => {
                         <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
                             <li>✅ Registro rápido de boletas</li>
                             <li>✅ Gestión de pagos y saldos</li>
+                            <li>✅ Estados de Cuenta</li>
                             <li>✅ Métricas diarias</li>
                             <li>✅ Reportes exportables</li>
                             <li>✅ Multiusuario y backups</li>
