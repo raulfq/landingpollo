@@ -76,5 +76,4 @@ export default defineConfig([
 ```
 =======
 # landingpollo
-para el sistema avicola 
->>>>>>> dc1073121e33901df7c1f3d4a670c0c6f836c361
+https://avicolasoft.netlify.app/
