@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+Link de la pagina
 
 https://avicolasoft.netlify.app/
 # React + TypeScript + Vite
@@ -75,5 +75,4 @@ export default defineConfig([
 ])
 ```
 =======
-# landingpollo
-https://avicolasoft.netlify.app/
+
